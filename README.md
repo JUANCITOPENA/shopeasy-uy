@@ -50,6 +50,8 @@
 ---
 
 ## 📂 Estructura del Proyecto
+
+```
 shopeasy-uy/
 │
 ├── public/                 # Archivos estáticos públicos
@@ -76,6 +78,7 @@ shopeasy-uy/
 ├── index.html              # Plantilla HTML principal
 ├── package.json            # Metadatos y dependencias
 └── vite.config.js          # Configuración de Vite
+```
 
 ---
 
