@@ -1,0 +1,137 @@
+/* src/App.css */
+
+/* --- Global App Layout --- */
+.App {
+  /* d-flex flex-column min-vh-100 en App.jsx maneja esto con Bootstrap */
+}
+
+.App-content {
+  /* padding y max-width manejado en App.jsx con Bootstrap Container */
+}
+
+/* --- Header --- */
+.App-header .navbar-brand img {
+  /* Estilos específicos del logo si son necesarios */
+}
+.App-header .form-control {
+   /* Aumentar un poco el tamaño del campo de búsqueda si se desea */
+   /* padding-top: 0.5rem;
+   padding-bottom: 0.5rem; */
+}
+/* Estilo para el badge del carrito */
+.btn .badge {
+    font-size: 0.65em; /* Ajusta según sea necesario */
+    padding: 0.3em 0.5em;
+}
+
+
+/* --- Product Card Styling --- */
+.product-card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem; /* Bootstrap default */
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.product-card-image {
+  width: 100%;
+  height: 200px; /* Altura fija para la imagen */
+  object-fit: contain; /* Escala la imagen manteniendo la proporción */
+  padding: 1rem; /* Espacio interno alrededor de la imagen */
+  background-color: #fff; /* Fondo blanco por si hay transparencias */
+  border-bottom: 1px solid #dee2e6; /* Línea separadora */
+}
+
+.product-card .card-body {
+  /* d-flex flex-column ya está aplicado en el componente */
+}
+
+.product-card-title {
+  font-size: 1rem;
+  font-weight: 600;
+  min-height: 2.4em; /* Espacio para ~2 líneas */
+  margin-bottom: 0.5rem;
+  /* Truncate text to 2 lines with ellipsis */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.product-card-category {
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+  color: #6c757d;
+  text-transform: capitalize;
+}
+
+.product-card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #0d6efd; /* Primary Bootstrap color */
+  /* margin-top: auto; ya está aplicado en el componente */
+  margin-bottom: 0.75rem; /* Espacio antes del botón */
+}
+
+.product-card-button {
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+/* --- Cart Modal --- */
+/* Ocultar spinners en input number dentro del carrito */
+.modal-body input[type=number]::-webkit-inner-spin-button,
+.modal-body input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.modal-body input[type=number] {
+  -moz-appearance: textfield; /* Firefox */
+}
+
+/* --- Footer --- */
+.App-footer {
+  /* mt-auto en App.jsx asegura que esté al final */
+  /* Otros estilos manejados con Bootstrap bg-dark, text-light, etc. */
+}
+
+/* --- Responsive Adjustments (Ejemplos) --- */
+@media (max-width: 768px) {
+  .App-header .navbar-brand {
+    font-size: 1rem; /* Reducir tamaño de fuente en móviles */
+  }
+   .App-header .form-control {
+      margin-bottom: 0.5rem; /* Espacio bajo la búsqueda en móvil */
+   }
+  .product-card-title {
+    font-size: 0.95rem;
+  }
+  .product-card-price {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 576px) {
+   .product-card-image {
+      height: 150px; /* Reducir altura de imagen en pantallas pequeñas */
+   }
+   .modal-footer {
+      flex-direction: column;
+      align-items: stretch !important;
+   }
+   .modal-footer > div:last-child {
+       margin-top: 0.5rem;
+       display: flex;
+       justify-content: space-between;
+   }
+   .modal-footer > div:last-child > .btn {
+       flex-grow: 1;
+   }
+    .modal-footer > div:last-child > .btn:first-child {
+       margin-right: 0.5rem;
+   }
+}
