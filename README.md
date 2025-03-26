@@ -1,7 +1,7 @@
 
 # 🛍️ ShopEasy UY - Simulación de E-commerce con React
 
-![ShopEasy UY Logo](src/assets/logo.png) <!-- Asegúrate que la ruta sea correcta si mueves el README -->
+![ShopEasy UY Logo](src/assets/Screenshot_257.png) <!-- Asegúrate que la ruta sea correcta si mueves el README -->
 
 ¡Bienvenido a **ShopEasy UY**! Una moderna interfaz de tienda online desarrollada con React, Vite y Bootstrap. Este proyecto simula las funcionalidades clave de un e-commerce, obteniendo datos de productos de la [FakeStore API](https://fakestoreapi.com/) y ofreciendo una experiencia de compra interactiva del lado del cliente.
 
