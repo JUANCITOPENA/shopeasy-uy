@@ -88,7 +88,7 @@ Sigue estos pasos para tener el proyecto corriendo en tu máquina local:
 
 1.  **Clona o Descarga el Repositorio** (Si lo tienes en un repositorio Git)
     ```bash
-    git clone <URL_DEL_REPOSITORIO>
+    git clone https://github.com/JUANCITOPENA/shopeasy-uy
     cd shopeasy-uy
     ```
     *O si empiezas desde cero:*
